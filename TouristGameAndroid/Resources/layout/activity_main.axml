@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/relativeLayout1" />
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|end"
+		android:layout_margin="@dimen/fab_margin"
+		app:srcCompat="@android:drawable/ic_dialog_email" />
+	<include
+		layout="@layout/content_main"
+		android:layout_width="fill_parent"
+		android:layout_height="240dp"
+		android:id="@+id/include1"
+		android:layout_marginTop="0.0dp" />
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/linearLayout1">
+		
+		
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_height="0px"
+			android:layout_weight="3"
+			android:id="@+id/header"
+			android:scaleX="2"
+			android:src="@drawable/background_brown"
+				/>
+		<LinearLayout
+			android:layout_weight="10"
+			android:layout_width="match_parent"
+			android:layout_height="0px"
+			android:background="@drawable/sjeng1"
+			android:orientation="vertical"
+			android:id="@+id/nested_linearLayout1">
+			<TextView
+				android:layout_gravity="left"
+				android:text="Welkom reiziger!!"
+				android:layout_width="match_parent" 
+				android:layout_height="0px"
+				android:layout_weight="1"
+				android:paddingLeft="25dp"
+				android:paddingRight="120dp"
+				android:paddingTop="25dp"
+				android:textSize="34dp"
+				android:id="@+id/welkom" />
+			<TextView
+				android:layout_gravity="left"
+				android:maxLines="3"
+				android:text="Bent u hier al eerder geweest?"
+				android:layout_width="match_parent"
+				android:layout_height="0px"
+				android:layout_weight="1"
+				android:paddingLeft="25dp"
+				android:paddingRight="250dp"
+				android:paddingTop="25dp"
+				android:textSize="44px"
+				android:id="@+id/eerder_geweest" />
+			<LinearLayout
+				android:layout_width="wrap_content"
+				android:layout_height="0px"
+				android:layout_weight="1"
+				android:layout_gravity="center_vertical|center_horizontal"
+				android:orientation="horizontal">
+				<Button
+					android:layout_weight="1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Ja "
+					android:textSize="54px"
+					android:paddingRight="50dp"
+					android:paddingLeft="50dp"
+					android:id="@+id/ja_button"
+>
+				</Button>
+				<Button
+					android:layout_weight="1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Nee"
+					android:textSize="54px"
+					android:paddingRight="50dp"
+					android:paddingLeft="50dp"
+					android:id="@+id/nee_button">
+				</Button>
+			</LinearLayout>
+		</LinearLayout>
+		<ImageView
+			android:layout_width="match_parent"
+			android:layout_weight="1"
+			android:layout_height="0px"
+			android:id="@+id/footer"
+			android:scaleX="4"
+			android:src="@drawable/background_brown"/>
+	</LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

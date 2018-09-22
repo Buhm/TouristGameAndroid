@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/relativeLayout1" />
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|end"
+		android:layout_margin="@dimen/fab_margin"
+		app:srcCompat="@android:drawable/ic_dialog_email" />
+	<include
+		layout="@layout/content_main"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/include1"
+		android:layout_marginTop="0.0dp" />
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/linearLayout1">
+		
+		
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="0px"
+			android:layout_weight="3"
+			android:scaleX="2"
+			android:id="@+id/header"
+			android:src="@drawable/background_brown"	/>
+		<LinearLayout
+			android:layout_weight="10"
+			android:layout_width="match_parent"
+			android:layout_height="0px"
+			android:background="@drawable/sjeng1"
+			android:orientation="vertical"
+			android:id="@+id/nested_linearLayout1">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0px"
+				android:layout_weight="2"
+				android:layout_gravity="left"
+				android:maxLines="2"
+				android:singleLine="false"
+				android:text="Mijn naam is Sjeng!"
+				android:paddingLeft="25dp"
+				android:paddingRight="195dp"
+				android:paddingTop="25dp"
+				android:textSize="64px" />
+			<TextView
+				android:layout_gravity="left"
+				android:maxLines="4"
+				android:text="Hoe heet u?"
+				android:layout_width="fill_parent"
+				android:layout_height="0px"
+				android:layout_weight="1"
+				android:paddingLeft="25dp"
+				android:paddingRight="180dp"
+				android:paddingTop="0.0dp"
+				android:textSize="54px" />
+			<TextView
+				android:layout_gravity="left"
+				android:maxLines="4"
+				android:text=""
+				android:layout_width="fill_parent"
+				android:layout_height="0px"
+				android:layout_weight="1"
+				android:paddingLeft="25dp"
+				android:paddingRight="180dp"
+				android:paddingTop="0.0dp"
+				android:textSize="54px" />
+				<Button
+					android:layout_width="fill_parent"
+					android:layout_height="0px"
+					android:text="Inderdaad"
+					android:textSize="54px"
+					android:paddingRight="10dp"
+					android:paddingLeft="10dp"
+					android:layout_gravity="center"
+					android:layout_weight="1"
+					android:id="@+id/ok_button1">
+				</Button>
+		</LinearLayout>
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_weight="1"
+			android:layout_height="0px"
+			android:id="@+id/footer"
+			android:scaleX="4"
+			android:src="@drawable/background_brown"/>
+	</LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

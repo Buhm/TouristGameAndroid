@@ -33,61 +33,42 @@
 			android:layout_width="fill_parent"
 			android:layout_height="0px"
 			android:layout_weight="3"
-			android:scaleX="2"
 			android:id="@+id/header"
-			android:src="@drawable/background_brown"	/>
+			android:scaleX="1.5"
+			android:src="@drawable/background_brown2"	/>
 		<LinearLayout
 			android:layout_weight="10"
 			android:layout_width="match_parent"
 			android:layout_height="0px"
-			android:background="@drawable/sjeng1"
+			android:background="@drawable/instr_background"
 			android:orientation="vertical"
-			android:id="@+id/nested_linearLayout1">
+			android:id="@+id/nested_linearLayout1"
+			android:minWidth="25px"
+			android:minHeight="25px">
 			<TextView
+				android:text="Ga naar de Markt"
 				android:layout_width="match_parent"
 				android:layout_height="0px"
-				android:layout_weight="2"
-				android:layout_gravity="left"
-				android:maxLines="4"
-				android:singleLine="false"
-				android:text="Mijn naam is Sjeng! Wie bent u? "
-				android:paddingLeft="25dp"
-				android:paddingRight="190dp"
-				android:paddingTop="25dp"
-				android:textSize="64px" />
-			<EditText
-				android:layout_gravity="left"
-				android:hint="Naam"
-				android:layout_width="fill_parent"
-				android:layout_height="0px"
 				android:layout_weight="1"
-				android:paddingLeft="25dp"
-				android:textSize="44px"
+				android:gravity="center"
 				android:textColor="@android:color/white"
-				android:id="@+id/editname" />
-			<EditText
-				android:layout_gravity="left"
-				android:hint="Email"
-				android:layout_width="fill_parent"
+				android:textSize="30dp"
+				android:id="@+id/textView1" />
+			<TextView
+				android:text=""
+				android:layout_width="match_parent"
 				android:layout_height="0px"
 				android:layout_weight="1"
-				android:paddingLeft="25dp"
-				android:textSize="44px"
-				android:textColor="@android:color/white" 
-				android:id="@+id/editemail"/>
-
-
-				<Button
-					android:layout_width="fill_parent"
-					android:layout_height="0px"
-					android:text="aangenaam"
-					android:textSize="54px"
-					android:paddingRight="10dp"
-					android:paddingLeft="10dp"
-					android:layout_gravity="center"
-					android:layout_weight="1"
-					android:id="@+id/aangenaam">
-				</Button>
+				android:id="@+id/textView2" />
+			<Button
+				
+				android:text="Ik ben er"
+				android:layout_width="match_parent"
+				android:layout_height="0px"
+				android:layout_weight="1"
+				android:textSize="20dp"
+				android:id="@+id/aangekomen_markt" />
+	
 		</LinearLayout>
 		<ImageView
 			android:layout_width="fill_parent"

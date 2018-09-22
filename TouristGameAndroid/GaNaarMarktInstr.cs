@@ -13,20 +13,20 @@ using Android.Widget;
 
 namespace TouristGameAndroid
 {
-    [Activity(Label = "MooieStadIntro")]
-    public class mooiestad_intro : MainActivity
+    [Activity(Label = "GaNaarMarktInstr")]
+    public class GaNaarMarktInstr : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.mooiestad_intro);
+            SetContentView(Resource.Layout.ganaarmarkt_instr);
 
 
-            Button buttoninderdaad = FindViewById<Button>(Resource.Id.inderdaad);
+            Button button = FindViewById<Button>(Resource.Id.aangekomen_markt);
 
-            buttoninderdaad.Click += delegate
+            button.Click += delegate
             {
-                var intent = new Intent(this, typeof(NpcSjengIntro));
+                var intent = new Intent(this, typeof(SjengIntroHerbenusQuest));
                 StartActivity(intent);
             };
 
@@ -59,8 +59,9 @@ namespace TouristGameAndroid
             Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
                 .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
         }
-        // Create your application here
 
+        // Create your application here
     }
-    
 }
+
+

@@ -13,20 +13,20 @@ using Android.Widget;
 
 namespace TouristGameAndroid
 {
-    [Activity(Label = "MooieStadIntro")]
-    public class mooiestad_intro : MainActivity
+    [Activity(Label = "sjengintroherbenus_quest")]
+    public class SjengIntroHerbenusQuest : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.mooiestad_intro);
+            SetContentView(Resource.Layout.sjengintroherbenus_quest);
 
 
-            Button buttoninderdaad = FindViewById<Button>(Resource.Id.inderdaad);
+            Button button = FindViewById<Button>(Resource.Id.loopmeeherbenus);
 
-            buttoninderdaad.Click += delegate
+            button.Click += delegate
             {
-                var intent = new Intent(this, typeof(NpcSjengIntro));
+                var intent = new Intent(this, typeof(HerbenusIntro));
                 StartActivity(intent);
             };
 
@@ -60,7 +60,6 @@ namespace TouristGameAndroid
                 .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
         }
         // Create your application here
-
     }
     
 }

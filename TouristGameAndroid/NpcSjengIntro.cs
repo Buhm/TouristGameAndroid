@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using SQLite;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -23,7 +24,30 @@ namespace TouristGameAndroid
             SetContentView(Resource.Layout.npcsjeng_intro);
 
 
+            //getbuttonfromlayoutresource
+            //and attach event to it
 
+            Button buttonAangenaam = FindViewById<Button>(Resource.Id.aangenaam);
+
+            buttonAangenaam.Click += delegate
+            {
+                /*
+                //path string for the database file
+                string dbpath = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "dbTest.db3");
+                //setup connection
+                var db = new SQLiteConnection(dbpath);
+
+                //setup a table
+                db.CreateTable<UserData>();
+                UserData User = new UserData("Remco", "r.lebon@gmail.com");
+
+                //store the object into the table
+                db.Insert(User);
+                */
+
+                var intent = new Intent(this, typeof(KomMeeIntro));
+                StartActivity(intent);
+            };
 
 
             FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
@@ -54,6 +78,8 @@ namespace TouristGameAndroid
                 .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
         }
         // Create your application here
+
+
 
     }
 

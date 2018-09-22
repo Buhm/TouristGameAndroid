@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -13,20 +12,20 @@ using Android.Widget;
 
 namespace TouristGameAndroid
 {
-    [Activity(Label = "MooieStadIntro")]
-    public class mooiestad_intro : MainActivity
+    [Activity(Label = "HerbenusIntro")]
+    public class HerbenusIntro : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.mooiestad_intro);
+            SetContentView(Resource.Layout.herbenus_intro);
 
 
-            Button buttoninderdaad = FindViewById<Button>(Resource.Id.inderdaad);
+            Button button = FindViewById<Button>(Resource.Id.aangenaam_herbenus);
 
-            buttoninderdaad.Click += delegate
+            button.Click += delegate
             {
-                var intent = new Intent(this, typeof(NpcSjengIntro));
+                var intent = new Intent(this, typeof(HerbenusIntro));
                 StartActivity(intent);
             };
 
@@ -59,8 +58,8 @@ namespace TouristGameAndroid
             Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
                 .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
         }
-        // Create your application here
 
+        // Create your application here
     }
     
 }

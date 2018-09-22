@@ -41,15 +41,12 @@
 			android:layout_width="match_parent"
 			android:layout_height="0px"
 			android:background="@drawable/herbenus_pic"
-			android:backgroundTint="@color/abc_background_cache_hint_selector_material_dark"
-			android:backgroundTintMode="multiply"		
 			android:orientation="vertical"
 			android:id="@+id/nested_linearLayout1">
 			<TextView
 				android:layout_width="match_parent"
 				android:layout_height="0px"
 				android:layout_weight="2"
-				android:layout_gravity="left"
 				android:text="Ga naar Minckeleers en help hem met het aanmaken van 'De Gaaspiep'"
 				android:layout_gravity="center"
 				android:textSize="84px"

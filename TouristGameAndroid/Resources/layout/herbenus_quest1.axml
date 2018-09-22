@@ -40,23 +40,19 @@
 			android:layout_weight="10"
 			android:layout_width="match_parent"
 			android:layout_height="0px"
-			android:background="@drawable/herbenus_pic"
-			android:backgroundTint="@color/abc_background_cache_hint_selector_material_dark"
-			android:backgroundTintMode="multiply"		
+			android:background="@drawable/herbenus_pic"	
 			android:orientation="vertical"
 			android:id="@+id/nested_linearLayout1">
 			<TextView
 				android:layout_width="match_parent"
 				android:layout_height="0px"
 				android:layout_weight="2"
-				android:layout_gravity="left"
-				android:maxLines="5"
 				android:singleLine="false"
 				android:text="Het is bijna zonsondergang en 'De Gaaspiep' is nog niet aan!"
 				android:paddingLeft="25dp"
 				android:paddingRight="25dp"
 				android:layout_gravity="center"
-				android:textSize="84px"
+				android:textSize="94px"
 				android:textColor="@android:color/white"/>
 				<Button
 					android:layout_width="fill_parent"

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/relativeLayout1" />
+	<android.support.design.widget.FloatingActionButton
+		android:id="@+id/fab"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="bottom|end"
+		android:layout_margin="@dimen/fab_margin"
+		app:srcCompat="@android:drawable/ic_dialog_email" />
+	<include
+		layout="@layout/content_main"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/include1"
+		android:layout_marginTop="0.0dp" />
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:id="@+id/linearLayout1">
+		
+		
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_height="0px"
+			android:layout_weight="3"
+			android:id="@+id/header"
+			android:scaleX="1.5"
+			android:src="@drawable/background_brown2"/>
+		<LinearLayout
+			android:layout_weight="10"
+			android:layout_width="match_parent"
+			android:layout_height="0px"
+			android:background="@drawable/herbenus_pic"
+			android:backgroundTint="@color/abc_background_cache_hint_selector_material_dark"
+			android:backgroundTintMode="multiply"		
+			android:orientation="vertical"
+			android:id="@+id/nested_linearLayout1">
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0px"
+				android:layout_weight="2"
+				android:layout_gravity="left"
+				android:text="Ga naar Minckeleers en help hem met het aanmaken van 'De Gaaspiep'"
+				android:layout_gravity="center"
+				android:textSize="84px"
+				android:textColor="@android:color/white"/>
+				<Button
+					android:layout_width="fill_parent"
+					android:layout_height="0px"
+					android:text="Komt in orde!"
+					android:textSize="24dp"
+					android:paddingRight="0dp"
+					android:paddingLeft="0dp"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:id="@+id/ikhelp">
+				</Button>
+		</LinearLayout>
+		<ImageView
+			android:layout_width="fill_parent"
+			android:layout_weight="1"
+			android:layout_height="0px"
+			android:id="@+id/footer"
+			android:scaleX="4"
+			android:src="@drawable/background_brown"/>
+	</LinearLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

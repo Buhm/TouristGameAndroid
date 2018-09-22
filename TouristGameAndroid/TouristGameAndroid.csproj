@@ -59,6 +59,9 @@
   <ItemGroup>
     <Compile Include="GaNaarMarktInstr.cs" />
     <Compile Include="HerbenusIntro.cs" />
+    <Compile Include="HerbenusQuest1.cs" />
+    <Compile Include="HerbenusQuest1a.cs" />
+    <Compile Include="HerbenusQuestGaMinckeleers.cs" />
     <Compile Include="KomMeeIntro.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MooieStadIntro.cs" />
@@ -177,7 +180,7 @@
     <AndroidResource Include="Resources\drawable\instr_background.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\herbenus_intro.axml">
+    <AndroidResource Include="Resources\layout\herbenus_Intro.axml">
       <Generator>MSBuild:UpdateGeneratedFiles</Generator>
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -190,6 +193,24 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\herbenus_pic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\herbenus_quest1.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\herbenus_quest1a.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\herbenus_quest_gaminckeleers.axml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

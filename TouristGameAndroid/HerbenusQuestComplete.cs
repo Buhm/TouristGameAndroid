@@ -2,30 +2,30 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Android.Support.Design.Widget;
 using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Runtime;
-using Android.Support.Design.Widget;
 using Android.Views;
 using Android.Widget;
 
 namespace TouristGameAndroid
 {
-    [Activity(Label = "HerbenusQuestGaMinckeleers")]
-    public class HerbenusQuestGaMinckeleers : Activity
+    [Activity(Label = "HerbenusQuestComplete")]
+    public class HerbenusQuestComplete : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.herbenus_quest_gaminckeleers);
+            SetContentView(Resource.Layout.herbenus_quest_complete);
 
 
-            Button button = FindViewById<Button>(Resource.Id.bijminckeleers);
+            Button button = FindViewById<Button>(Resource.Id.geen_zorgen);
 
             button.Click += delegate
             {
-                var intent = new Intent(this, typeof(MinckeleersIntro));
+                var intent = new Intent(this, typeof(SjengQuestComplete));
                 StartActivity(intent);
             };
 
@@ -56,9 +56,8 @@ namespace TouristGameAndroid
         {
             View view = (View)sender;
             Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
-                .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
+            .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
+            // Create your application here
         }
-        // Create your application here
     }
-    
 }

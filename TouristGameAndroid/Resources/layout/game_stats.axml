@@ -27,6 +27,8 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:id="@+id/linearLayout1">
+		
+		
 		<ImageView
 			android:layout_width="fill_parent"
 			android:layout_height="0px"
@@ -38,34 +40,78 @@
 			android:layout_weight="10"
 			android:layout_width="match_parent"
 			android:layout_height="0px"
-			android:background="@drawable/instr_background"
+			android:paddingLeft="30dp"
+			android:paddingRight="30dp"
+			android:background="@drawable/maastricht_vrijthof"
 			android:orientation="vertical"
 			android:id="@+id/nested_linearLayout1"
 			android:minWidth="25px"
 			android:minHeight="25px">
 			<TextView
-				android:text="Ga naar Minckeleers op De Markt"
+				android:text=""
+				android:layout_width="match_parent"
+				android:layout_height="0px"
+				android:layout_weight="4"
+				android:textColor="@android:color/white"
+				android:textSize="34dp"
+				android:id="@+id/textView2" />
+			<TextView
+				android:text="Afstand : X.X km"
 				android:layout_width="match_parent"
 				android:layout_height="0px"
 				android:layout_weight="1"
 				android:textColor="@android:color/white"
-				android:textSize="40dp"
+				android:textSize="24dp"
 				android:id="@+id/textView1" />
 			<TextView
-				android:text=""
+				android:text="Snelheid: X.X km/u"
 				android:layout_width="match_parent"
 				android:layout_height="0px"
 				android:layout_weight="1"
+				android:textColor="@android:color/white"
+				android:textSize="24dp"
 				android:id="@+id/textView2" />
-			<Button				
-				android:text="Ik ben er"
+			<TextView
+				android:text="Duur       : XX:XX (u/m)"
 				android:layout_width="match_parent"
 				android:layout_height="0px"
 				android:layout_weight="1"
-				android:textSize="20dp"
-				android:id="@+id/bijminckeleers">
-			</Button>
-	
+				android:textColor="@android:color/white"
+				android:textSize="24dp"
+				android:id="@+id/textView2" />
+			<TextView
+				android:text="Status    : Prominent"
+				android:layout_width="match_parent"
+				android:layout_height="0px"
+				android:layout_weight="1"
+				android:textColor="@android:color/white"
+				android:textSize="24dp"
+				android:id="@+id/textView2" />
+
+					<LinearLayout
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height="0px"
+			android:orientation="horizontal"
+			android:id="@+id/nested_linearLayout1"
+			android:minWidth="25px"
+			android:minHeight="25px">
+			<Button
+				android:text="Leaderboard"
+				android:layout_width="0px"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:textSize="18dp"
+				android:id="@+id/upload_stats_leaderboard" />
+							<Button
+				android:text="Reset Game"
+				android:layout_width="0px"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:textSize="18dp"
+				android:id="@+id/reset_game" />
+
+	</LinearLayout>
 		</LinearLayout>
 		<ImageView
 			android:layout_width="fill_parent"

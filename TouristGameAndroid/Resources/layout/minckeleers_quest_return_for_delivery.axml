@@ -27,57 +27,68 @@
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:id="@+id/linearLayout1">
-		
-		
 		<ImageView
 			android:layout_width="fill_parent"
 			android:layout_height="0px"
 			android:layout_weight="3"
-			android:scaleX="2"
 			android:id="@+id/header"
-			android:src="@drawable/background_brown"	/>
+			android:scaleX="1.5"
+			android:src="@drawable/background_brown2"	/>
 		<LinearLayout
 			android:layout_weight="10"
 			android:layout_width="match_parent"
 			android:layout_height="0px"
-			android:background="@drawable/sjeng1"
+			android:background="@drawable/instr_background"
 			android:orientation="vertical"
 			android:id="@+id/nested_linearLayout1">
-			<TextView
+		<TextView
 				android:layout_width="match_parent"
 				android:layout_height="0px"
 				android:layout_weight="2"
 				android:layout_gravity="left"
-				android:maxLines="4"
+				android:maxLines="3"
 				android:singleLine="false"
-				android:text="Welkom!"
+				android:text="Ga terug naar Minckeleers met de toorts"
 				android:paddingLeft="25dp"
-				android:paddingRight="175dp"
-				android:paddingTop="25dp"
-				android:textSize="40dp" />
+				android:paddingRight="25dp"
+				android:paddingTop="0dp"
+				android:textSize="79px"
+				android:textColor="@android:color/white"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0px"
+				android:layout_weight="1"
+				android:layout_gravity="left"
+				android:maxLines="3"
+				android:singleLine="false"
+				android:text=""
+				android:paddingLeft="25dp"
+				android:paddingRight="25dp"
+				android:paddingTop="5dp"
+				android:textSize="79px"
+				android:textColor="@android:color/white"/>
 			<TextView
 				android:layout_gravity="left"
 				android:maxLines="4"
-				android:text="Wat een mooie stad he?"
+				android:text=""
 				android:layout_width="fill_parent"
 				android:layout_height="0px"
-				android:layout_weight="2"
+				android:layout_weight="1"
 				android:paddingLeft="25dp"
-				android:paddingRight="165dp"
-				android:paddingTop="0.0dp"
-				android:textSize="30dp" />
-
+				android:paddingRight="0dp"
+				android:paddingTop="47dp"
+				android:textSize="54px"
+				android:textColor="@android:color/white"/>
 				<Button
 					android:layout_width="fill_parent"
 					android:layout_height="0px"
-					android:text="Inderdaad"
-					android:onClick="Button_Clicked"
-					android:textSize="54px"
-					android:paddingRight="10dp"
-					android:paddingLeft="10dp"
+					android:text="aangekomen"
+					android:textSize="22dp"
+					android:paddingRight="0dp"
+					android:paddingLeft="0dp"
 					android:layout_gravity="center"
 					android:layout_weight="1"
-					android:id="@+id/inderdaad">
+					android:id="@+id/aangekomen">
 				</Button>
 		</LinearLayout>
 		<ImageView

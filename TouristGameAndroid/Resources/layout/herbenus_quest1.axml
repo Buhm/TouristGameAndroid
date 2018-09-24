@@ -48,11 +48,23 @@
 				android:layout_height="0px"
 				android:layout_weight="2"
 				android:singleLine="false"
-				android:text="Het is bijna zonsondergang en 'De Gaaspiep' is nog niet aan!"
+				android:text="Het is bijna zonsondergang"
 				android:paddingLeft="25dp"
 				android:paddingRight="25dp"
 				android:layout_gravity="center"
-				android:textSize="94px"
+				android:textSize="54px"
+				android:textColor="@android:color/white"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0px"
+				android:layout_weight="2"
+				android:singleLine="false"
+				android:text="'De Gaaspiep' is nog niet aan!"
+				android:paddingLeft="25dp"
+				android:paddingRight="25dp"
+				android:paddingTop="135dp"
+				android:layout_gravity="center"
+				android:textSize="44px"
 				android:textColor="@android:color/white"/>
 				<Button
 					android:layout_width="fill_parent"

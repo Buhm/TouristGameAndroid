@@ -60,7 +60,7 @@
 				android:text=""
 				android:layout_width="fill_parent"
 				android:layout_height="0px"
-				android:layout_weight="1"
+				android:layout_weight="2"
 				android:paddingLeft="25dp"
 				android:paddingRight="0dp"
 				android:paddingTop="67dp"

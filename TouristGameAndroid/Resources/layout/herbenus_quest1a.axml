@@ -47,9 +47,17 @@
 				android:layout_width="match_parent"
 				android:layout_height="0px"
 				android:layout_weight="2"
-				android:text="Ga naar Minckeleers en help hem met het aanmaken van 'De Gaaspiep'"
+				android:text="Ga naar Minckeleers"
+				android:textSize="54px"
+				android:textColor="@android:color/white"/>
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="0px"
+				android:layout_weight="2"
+				android:text="Help Minckeleers met het aanmaken van 'De Gaaspiep'"
 				android:layout_gravity="center"
-				android:textSize="84px"
+				android:paddingTop="115dp"
+				android:textSize="44px"
 				android:textColor="@android:color/white"/>
 				<Button
 					android:layout_width="fill_parent"

@@ -33,9 +33,9 @@
 			android:layout_width="fill_parent"
 			android:layout_height="0px"
 			android:layout_weight="3"
-			android:scaleX="2"
 			android:id="@+id/header"
-			android:src="@drawable/background_brown"	/>
+			android:scaleX="1.5"
+			android:src="@drawable/background_brown2"	/>
 		<LinearLayout
 			android:layout_weight="10"
 			android:layout_width="match_parent"
@@ -48,36 +48,35 @@
 				android:layout_height="0px"
 				android:layout_weight="2"
 				android:layout_gravity="left"
-				android:maxLines="4"
+				android:maxLines="2"
 				android:singleLine="false"
-				android:text="Welkom!"
+				android:text="De zon gaat bijna onder!"
 				android:paddingLeft="25dp"
 				android:paddingRight="175dp"
 				android:paddingTop="25dp"
-				android:textSize="40dp" />
+				android:textSize="64px"
+				android:id="@+id/owja" />
 			<TextView
 				android:layout_gravity="left"
 				android:maxLines="4"
-				android:text="Wat een mooie stad he?"
+				android:text="Ga naar de X oven om de toorts aan te steken"
 				android:layout_width="fill_parent"
 				android:layout_height="0px"
 				android:layout_weight="2"
 				android:paddingLeft="25dp"
-				android:paddingRight="165dp"
-				android:paddingTop="0.0dp"
-				android:textSize="30dp" />
-
+				android:paddingRight="180dp"
+				android:paddingTop="20.0dp"
+				android:textSize="54px"/>
 				<Button
 					android:layout_width="fill_parent"
 					android:layout_height="0px"
-					android:text="Inderdaad"
-					android:onClick="Button_Clicked"
-					android:textSize="54px"
-					android:paddingRight="10dp"
-					android:paddingLeft="10dp"
+					android:text="Goed idee!!"
+					android:textSize="24dp"
+					android:paddingRight="0dp"
+					android:paddingLeft="0dp"
 					android:layout_gravity="center"
 					android:layout_weight="1"
-					android:id="@+id/inderdaad">
+					android:id="@+id/goed_idee">
 				</Button>
 		</LinearLayout>
 		<ImageView

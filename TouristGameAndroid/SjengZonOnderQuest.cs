@@ -12,20 +12,20 @@ using Android.Widget;
 
 namespace TouristGameAndroid
 {
-    [Activity(Label = "HerbenusQuestGaMinckeleers")]
-    public class HerbenusQuestGaMinckeleers : Activity
+    [Activity(Label = "SjengZonderOnderQuest")]
+    public class SjengZonOnderQuest : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.herbenus_quest_gaminckeleers);
+            SetContentView(Resource.Layout.sjengzononder_quest);
 
 
-            Button button = FindViewById<Button>(Resource.Id.bijminckeleers);
+            Button button = FindViewById<Button>(Resource.Id.goed_idee);
 
             button.Click += delegate
             {
-                var intent = new Intent(this, typeof(MinckeleersIntro));
+                var intent = new Intent(this, typeof(GaNaarOvenQuest));
                 StartActivity(intent);
             };
 
@@ -56,9 +56,9 @@ namespace TouristGameAndroid
         {
             View view = (View)sender;
             Snackbar.Make(view, "Replace with your own action", Snackbar.LengthLong)
-                .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
+            .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
+
+            // Create your application here
         }
-        // Create your application here
     }
-    
 }
